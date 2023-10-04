@@ -9,11 +9,7 @@
     margin:0;
     padding:0;
 }
-.attribution { 
-    font-size: 11px;         
-    text-align: center; }
-.attribution a { 
-    color: hsl(228, 45%, 44%); }
+
 
 body{
     font-family: 'Outfit';
@@ -22,7 +18,7 @@ body{
 }
 .container{
     background-color: var(--white);
-    width:375px;
+    width:300px;
     align-items: center;
     margin: 20px auto;
     justify-content: center;
@@ -40,11 +36,43 @@ body{
 .main h3{
     font-weight: 700;
     padding: 20px 0;
-    font-size:30px;
+    font-size:24px;
     color: var(--darkblue);
 }
 .main p{
     font-weight: 300px;
     padding: 0 20px ;
     color: var(--grayishblue);
+}
+
+/* navigation buttons code */
+
+.buttons{
+    display :flex;
+    justify-content: space-around;
+    width:300px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 700;
+}
+.buttons a{
+    text-decoration: none;
+    color:white;
+}
+
+.buttons .back{
+    background-color: hsl(218, 44%, 22%);
+}
+.buttons .next{
+    background-color: hsl(219, 76%, 52%);
+    
+}
+.buttons .next,.back{
+    width:40%;
+    text-align: center;
+    padding:10px;
+    border-radius: 5px;
+}
+.buttons .next:hover,.back:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
